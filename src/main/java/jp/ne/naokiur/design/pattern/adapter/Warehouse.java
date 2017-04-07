@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Warehouse {
-    private List<String> item;
+    protected List<String> item;
 
     public Warehouse() {
         this.item = new ArrayList<>();
