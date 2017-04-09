@@ -6,13 +6,13 @@ import jp.ne.naokiur.design.pattern.mediator.character.Farmer;
 import jp.ne.naokiur.design.pattern.mediator.character.Goat;
 import jp.ne.naokiur.design.pattern.mediator.character.Wolf;
 
-public class CrossReverMediator implements CrossRiver {
+public class CrossRiverMediator implements CrossRiver {
     private Farmer farmer;
     private Wolf wolf;
     private Goat goat;
     private Chabbage chabbage;
 
-    public CrossReverMediator(Farmer farmer, Wolf wolf, Goat goat, Chabbage chabbage) {
+    public CrossRiverMediator(Farmer farmer, Wolf wolf, Goat goat, Chabbage chabbage) {
         this.farmer = farmer;
         this.wolf = wolf;
         this.goat = goat;

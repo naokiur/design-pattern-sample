@@ -16,7 +16,7 @@ public class CrossReverMediatorTest {
     private Wolf wolf;
     private Goat goat;
     private Chabbage chabbage;
-    private CrossReverMediator crossRiver;
+    private CrossRiverMediator crossRiver;
 
     @Before
     public void setUp() {
@@ -25,7 +25,7 @@ public class CrossReverMediatorTest {
         goat = new Goat();
         chabbage = new Chabbage();
 
-        crossRiver = new CrossReverMediator(farmer, wolf, goat, chabbage);
+        crossRiver = new CrossRiverMediator(farmer, wolf, goat, chabbage);
         farmer.setMediator(crossRiver);
         wolf.setMediator(crossRiver);
         goat.setMediator(crossRiver);
