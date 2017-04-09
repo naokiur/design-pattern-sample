@@ -1,6 +1,6 @@
 package jp.ne.naokiur.design.pattern.mediator;
 
-import jp.ne.naokiur.design.pattern.mediator.character.Chabbage;
+import jp.ne.naokiur.design.pattern.mediator.character.Cabbage;
 import jp.ne.naokiur.design.pattern.mediator.character.Character;
 import jp.ne.naokiur.design.pattern.mediator.character.Farmer;
 import jp.ne.naokiur.design.pattern.mediator.character.Goat;
@@ -10,13 +10,13 @@ public class CrossRiverMediator implements CrossRiver {
     private Farmer farmer;
     private Wolf wolf;
     private Goat goat;
-    private Chabbage chabbage;
+    private Cabbage cabbage;
 
-    public CrossRiverMediator(Farmer farmer, Wolf wolf, Goat goat, Chabbage chabbage) {
+    public CrossRiverMediator(Farmer farmer, Wolf wolf, Goat goat, Cabbage cabbage) {
         this.farmer = farmer;
         this.wolf = wolf;
         this.goat = goat;
-        this.chabbage = chabbage;
+        this.cabbage = cabbage;
     }
 
     @Override
@@ -63,8 +63,8 @@ public class CrossRiverMediator implements CrossRiver {
             goat.setStatus(Status.DEAD);
         }
 
-        if (!farmer.getPosition().equals(chabbage.getPosition()) && chabbage.getPosition().equals(goat.getPosition())) {
-            chabbage.setStatus(Status.DEAD);
+        if (!farmer.getPosition().equals(cabbage.getPosition()) && cabbage.getPosition().equals(goat.getPosition())) {
+            cabbage.setStatus(Status.DEAD);
         }
 
     }
