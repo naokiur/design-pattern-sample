@@ -16,6 +16,12 @@ public class App {
 
         System.out.println(matchedEmployee.getFirstName() + " " + matchedEmployee.getLastName());
         // These codes is wrong pattern according to OOP end.
+
+        // Try to Iterator pattern begin.
+        EmployeeMember employeeMember = new EmployeeMember(Arrays.asList(new Employee("john", "John", "Smith", 24), new Employee("jane", "Jane", "Smith", 22)));
+        
+        
+        // Try to Iterator pattern end.
     }
 
     /**
