@@ -1,10 +1,10 @@
 package jp.ne.naokiur.design.pattern.iterator;
 
-public class EmployeeAsendingIterator implements Iterator {
+public class EmployeeAscendingIterator implements Iterator {
     private EmployeeMember employeeMember;
     private int index;
 
-    public EmployeeAsendingIterator(EmployeeMember employeeMember) {
+    public EmployeeAscendingIterator(EmployeeMember employeeMember) {
         this.employeeMember = employeeMember;
         this.index = 0;
     }
