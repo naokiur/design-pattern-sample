@@ -11,7 +11,7 @@ public class EmployeeMember implements Aggregate {
 
     @Override
     public Iterator iterator() {
-        return new EmployeeIterator(this);
+        return new EmployeeAsendingIterator(this);
     }
 
     public List<Employee> getEmployees() {

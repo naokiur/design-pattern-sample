@@ -17,12 +17,19 @@ public class App {
         // This is assumption of Requirement that We need to search last of target age employee.
         Employee lastMatchedEmployee = searchTargetAgeEmployeeLast(employees, 22);
 
-        System.out.println(firstMatchedEmployee.getFirstName());
-        System.out.println(lastMatchedEmployee.getFirstName());
+        System.out.println("Wrong pattern of First:" + firstMatchedEmployee.getFirstName());
+        System.out.println("Wrong pattern of Last:" + lastMatchedEmployee.getFirstName());
         // These codes is wrong pattern according to OOP end.
 
         // Try to Iterator pattern begin.
-        EmployeeMember employeeMember = new EmployeeMember(Arrays.asList(new Employee("john", "John", "Smith", 24), new Employee("jane", "Jane", "Smith", 22)));
+        EmployeeMember employeeMember = new EmployeeMember(Arrays.asList(new Employee("john", "John", "Smith", 24), new Employee("jane", "Jane", "Smith", 22), new Employee("bob", "Bob", "Smith", 22)));
+        Iterator iterator = employeeMember.iterator();
+        while (!iterator.isMatchedAge(22)) {
+            iterator.next();
+        }
+        Employee matchedEmployee = iterator.current();
+        System.out.println("Correct pattern of first:" + matchedEmployee.getFirstName());
+//        System.out.println("Correct pattern of last:" + matchedEmployee.getFirstName());
 
 
         // Try to Iterator pattern end.
