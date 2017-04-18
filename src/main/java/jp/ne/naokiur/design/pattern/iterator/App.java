@@ -30,8 +30,9 @@ public class App {
             iterator.next();
         }
         Employee matchedEmployee = iterator.current();
-        System.out.println("Correct pattern of first:" + matchedEmployee.getFirstName());
-//        System.out.println("Correct pattern of last:" + matchedEmployee.getFirstName());
+//        System.out.println("Correct pattern of first:" + matchedEmployee.getFirstName());
+        System.out.println("Correct pattern of last:" + matchedEmployee.getFirstName());
+
 
         // Try to Iterator pattern end.
     }
