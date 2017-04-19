@@ -7,7 +7,7 @@ public class App {
 
         // battle begin
         card.spentTurn();
-        card.changeStatus(State.POISON);
+        card.changeStatus(State.VERY_POISON);
         card.spentTurn();
         card.spentTurn();
         card.spentTurn();

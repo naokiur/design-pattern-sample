@@ -12,6 +12,12 @@ public enum State {
         public Integer selectDamageAfterTurn() {
             return 10;
         }
+    },
+    VERY_POISON {
+        @Override
+        public Integer selectDamageAfterTurn() {
+            return 20;
+        }
     };
 
 
