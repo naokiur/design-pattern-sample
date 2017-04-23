@@ -20,6 +20,9 @@ public class ArtistTest {
         artist.undoCanvas();
         System.out.println("undo : " + canvas.getField());
 
+        artist.write(new Drawing(9, "yellow", "Circle"), canvas);
+        System.out.println("undo : " + canvas.getField());
+
         artist.redoCanvas();
         System.out.println("redo : " + canvas.getField());
 
