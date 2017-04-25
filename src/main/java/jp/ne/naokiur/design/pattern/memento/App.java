@@ -16,5 +16,15 @@ public class App {
 
         canvas.revertMemento(management.getVersions().get(1));
         System.out.println(canvas.getPainting());
+
+        canvas.revertMemento(management.getVersions().get(2));
+        System.out.println(canvas.getPainting());
+
+        canvas.paint("fuga");
+        System.out.println(canvas.getPainting());
+        management.add(3, canvas.createMemento());
+
+        canvas.revertMemento(management.getVersions().get(1));
+        System.out.println(canvas.getPainting());
     }
 }
