@@ -3,17 +3,17 @@ package jp.ne.naokiur.design.pattern.composite;
 public class App {
 
     public static void main(String[] args) {
-        Carbon firstCarbon = new Carbon();
-        firstCarbon.bond(new Hydrogen());
-        firstCarbon.bond(new Hydrogen());
-        firstCarbon.bond(new Hydrogen());
+        Carbon carbon = new Carbon();
+        carbon.bond(new Hydrogen());
+        carbon.bond(new Hydrogen());
+        carbon.bond(new Hydrogen());
 
-        Carbon secondCarbon = new Carbon();
-        secondCarbon.bond(new Hydrogen());
-        secondCarbon.bond(new Hydrogen());
-        secondCarbon.bond(new Hydrogen());
-        secondCarbon.bond(firstCarbon);
+        Carbon basicCarbon = new Carbon();
+        basicCarbon.bond(new Hydrogen());
+        basicCarbon.bond(new Hydrogen());
+        basicCarbon.bond(new Hydrogen());
+        basicCarbon.bond(carbon);
 
-        System.out.println(secondCarbon.createChemicalFormula());
+        System.out.println(basicCarbon.createChemicalFormula());
     }
 }
